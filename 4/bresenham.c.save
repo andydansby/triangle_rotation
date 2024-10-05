@@ -12,14 +12,18 @@ void bresenham (int x1, int y1, int x2, int y2)
     deltaY = ABS(deltaY);
 
 	//plot starting point
+    //plot(x1, y1);
     gfx_xy = (x1 << 8) | y1;
     joffa_pixel2();
+    
+    
 
     if (deltaX > deltaY)
     {
         fraction = deltaY - (deltaX >> 1);
         while (x1 != x2)
         {
+            //plot(x1, y1);
             gfx_xy = (x1 << 8) | y1;
             joffa_pixel2();
 
@@ -37,8 +41,9 @@ void bresenham (int x1, int y1, int x2, int y2)
         fraction = deltaX - (deltaY >> 1);
         while (y1 != y2)
         {
-            gfx_xy = (x1 << 8) | y1;
-            joffa_pixel2();
+           //gfx_y = y1;
+            //rtunes_pixel();
+            plot(x1, y1);
 
             if (fraction >= 0)
             {

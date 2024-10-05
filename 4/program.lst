@@ -1,0 +1,6 @@
+plot.asm
+trianglerotation.c
+
+
+; .lst files commented with semi-colon or hash
+# must have blank line after this

@@ -1,9 +1,4 @@
 /* zcc +zx trianglerotation.c -o trianglerotation -compiler=sccz80 -clib=default -lndos -lm -create-app */
-
-#define ABS(N) ((N<0)?(-N):(N))
-#define MAXANGLE 360
-
-
 #include <math.h>
 #include <graphics.h>
 #include "extern.h"
@@ -32,8 +27,11 @@ int main(void) {
   c = (x1 + x2 + x3) / 3;
   d = (y1 + y2 + y3) / 3;
 
-
+  gfx_xy = (c << 8) | d;
   //gfx_xy = (yy << 8) | xx;
+  joffa_pixel2();
+
+
 
   /* Rotate triangle */
   while (count < 500)
@@ -50,13 +48,17 @@ int main(void) {
     xr3 = c + (x3 - c) * cos_temp - (y3 - d) * sin_temp;
     yr3 = d + (x3 - c) * sin_temp + (y3 - d) * cos_temp;
 
+
+    //cursor_x = xr1;
+    //cursor_y = yr1;
+
 	bresenham(xr1, yr1, xr2, yr2);
 	bresenham(xr2, yr2, xr3, yr3);
 	bresenham(xr3, yr3, xr1, yr1);
 
     a += step;
-    if (a > MAXANGLE) {
-      a -= MAXANGLE;
+    if (a > 360) {
+      a -= 360;
     }
     count++;
   }

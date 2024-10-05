@@ -1,6 +1,5 @@
 
 
-#define ABS(N) ((N<0)?(-N):(N))
 
 half_t _sine(half_t xx) {
   const half_t P = 0.225;
