@@ -14,7 +14,7 @@ Folder 4 has quite a few changes.
     1) an excellent optimization by user DFZX to use half_t instead of float for faster half sized floats
     2) Changing the calculations a bit
     3) Using a Bresenham Line routine instead of a drawto()
-    4) Using the Joffa Pixel assembly routine instead of the build in plot routine
+    4) Using the Joffa Pixel assembly routine instead of the built in plot routine
 
 
 
