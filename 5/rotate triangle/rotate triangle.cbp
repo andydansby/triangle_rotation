@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="rotate triangle" />
+		<Option pch_mode="2" />
+		<Option compiler="sdcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/rotate triangle" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="sdcc" />
+				<Compiler>
+					<Add option="--debug" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="../bresenham.asm" />
+		<Unit filename="../bresenham.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../clear_screen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../compile.bat" />
+		<Unit filename="../draw_triangle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../dx_larger.asm" />
+		<Unit filename="../dy_larger.asm" />
+		<Unit filename="../estimate_trig.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../extern.h" />
+		<Unit filename="../notes.txt" />
+		<Unit filename="../plot.asm" />
+		<Unit filename="../program.lst" />
+		<Unit filename="../routines.asm" />
+		<Unit filename="../trianglerotation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../variables.asm" />
+		<Unit filename="../variables.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../version2-2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

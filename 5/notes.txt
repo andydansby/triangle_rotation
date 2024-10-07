@@ -1,0 +1,19 @@
+
+
+trianglerotation.c:62:17: warning: Implicit definition of function 'bresenham_start' it will return an int. Prototype it explicitly if this is not what you want. [-Wimplicit-function-definition]
+trianglerotation.c::main::0::19:22: error: undefined symbol: _line_x1
+  ^---- (_line_x1)
+trianglerotation.c::main::0::19:22: error: undefined symbol: _line_y1
+  ^---- (_line_y1)
+trianglerotation.c::main::0::19:22: error: undefined symbol: _line_x2
+  ^---- (_line_x2)
+trianglerotation.c::main::0::19:22: error: undefined symbol: _line_y2
+  ^---- (_line_y2)
+trianglerotation.c::main::0::19:22: error: undefined symbol: _line_x1
+  ^---- (_line_x1)
+trianglerotation.c::main::0::19:22: error: undefined symbol: _line_y1
+  ^---- (_line_y1)
+trianglerotation.c::main::0::19:22: error: undefined symbol: _line_x2
+  ^---- (_line_x2)
+trianglerotation.c::main::0::19:22: error: undefined symbol: _line_y2
+  ^---- (_line_y2)
