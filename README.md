@@ -16,7 +16,11 @@ Folder 4 has quite a few changes.
     3) Using a Bresenham Line routine instead of a drawto()
     4) Using the Joffa Pixel assembly routine instead of the built in plot routine
 
-
+Folder 5 is using additional assembly routines.
+    1) The Bresenham line routine is now pure assembler
+    2) The plot assembler routine now has an unplot
+    3) Most of the C code is now in seperate files for better orginization
+    4) additional #defines are being used
 
 
 
