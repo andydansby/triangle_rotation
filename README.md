@@ -23,8 +23,11 @@ Folder 5 is using additional assembly routines.
     4) additional #defines are being used
 
 
-
-
+Folder 6 has changed to the ZSDCC compiler
+    1) optimized Bresenham line routine, saves some T states when drawing line
+    2) not Using buffer yet, but set up for buffer to happen
+Overall the code seems to run slower, which is unexpected.
+going to work over time to improve code speed
 
 
 
