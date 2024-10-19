@@ -1,0 +1,110 @@
+Object  file uncontended.o at $0000: Z80RMF18
+  Name: uncontended
+  CPU:  z80 
+  Section "": 0 bytes
+  Section bss_compiler: 45 bytes
+  Section IGNORE: 0 bytes
+  Section code_crt_init: 0 bytes
+  Section code_compiler: 31 bytes
+  Section BANK_00: 1785 bytes
+  Section data_compiler: 24 bytes
+  Section IM2_VECTOR_PLACEMENT: 325 bytes
+  Section code_user: 171 bytes
+  Section rodata_user: 1 bytes
+  Section smc_user: 0 bytes
+  Section data_user: 0 bytes
+  Section bss_user: 1 bytes
+  Symbols:
+    G A $002C: _yr3 (section bss_compiler) (file uncontended.c:821)
+    G A $002B: _xr3 (section bss_compiler) (file uncontended.c:819)
+    G A $002A: _yr2 (section bss_compiler) (file uncontended.c:817)
+    G A $0029: _xr2 (section bss_compiler) (file uncontended.c:815)
+    G A $0028: _yr1 (section bss_compiler) (file uncontended.c:813)
+    G A $0027: _xr1 (section bss_compiler) (file uncontended.c:811)
+    G A $0025: _d (section bss_compiler) (file uncontended.c:809)
+    G A $0023: _c (section bss_compiler) (file uncontended.c:807)
+    G A $0021: _y3 (section bss_compiler) (file uncontended.c:805)
+    G A $001F: _x3 (section bss_compiler) (file uncontended.c:803)
+    G A $001D: _x2 (section bss_compiler) (file uncontended.c:801)
+    G A $001B: _y2 (section bss_compiler) (file uncontended.c:799)
+    G A $0019: _y1 (section bss_compiler) (file uncontended.c:797)
+    G A $0017: _x1 (section bss_compiler) (file uncontended.c:795)
+    G A $0015: _ship_angle (section bss_compiler) (file uncontended.c:793)
+    G A $0014: _char_temp2 (section bss_compiler) (file uncontended.c:791)
+    G A $0013: _char_temp1 (section bss_compiler) (file uncontended.c:789)
+    G A $0012: _char_temp (section bss_compiler) (file uncontended.c:787)
+    G A $0010: _int_temp6 (section bss_compiler) (file uncontended.c:785)
+    G A $000E: _int_temp5 (section bss_compiler) (file uncontended.c:783)
+    G A $000C: _int_temp4 (section bss_compiler) (file uncontended.c:781)
+    G A $000A: _int_temp3 (section bss_compiler) (file uncontended.c:779)
+    G A $0008: _int_temp2 (section bss_compiler) (file uncontended.c:777)
+    G A $0006: _int_temp1 (section bss_compiler) (file uncontended.c:775)
+    G A $0005: _ship_yr3 (section bss_compiler) (file uncontended.c:773)
+    G A $0004: _ship_xr3 (section bss_compiler) (file uncontended.c:771)
+    G A $0003: _ship_yr2 (section bss_compiler) (file uncontended.c:769)
+    G A $0002: _ship_xr2 (section bss_compiler) (file uncontended.c:767)
+    G A $0001: _ship_yr1 (section bss_compiler) (file uncontended.c:765)
+    G A $0000: _ship_xr1 (section bss_compiler) (file uncontended.c:763)
+    G A $0000: _controls (section code_compiler) (file uncontended.c:871)
+    G A $05F6: _main (section BANK_00) (file uncontended.c:1635)
+    G A $05BE: _use_random_number_generator (section BANK_00) (file uncontended.c:1601)
+    G = $0000: _checkBoundries (section BANK_00) (file uncontended.c:1597)
+    G A $01E2: _calculateShip (section BANK_00) (file uncontended.c:1142)
+    G A $0189: _undraw_ship (section BANK_00) (file uncontended.c:1106)
+    G A $0130: _draw_ship (section BANK_00) (file uncontended.c:1070)
+    G A $0105: __cosine (section BANK_00) (file uncontended.c:1045)
+    G A $0000: __sine (section BANK_00) (file uncontended.c:898)
+    G A $0016: _angle (section data_compiler) (file uncontended.c:1809)
+    G A $0014: _step (section data_compiler) (file uncontended.c:1807)
+    G A $0012: _size (section data_compiler) (file uncontended.c:1805)
+    G A $000E: _cos_temp (section data_compiler) (file uncontended.c:1803)
+    G A $000A: _sin_temp (section data_compiler) (file uncontended.c:1801)
+    G A $0006: _rad_temp (section data_compiler) (file uncontended.c:1799)
+    G A $0004: _copy_memory_size (section data_compiler) (file uncontended.c:1797)
+    G A $0002: _copy_memory_destination (section data_compiler) (file uncontended.c:1795)
+    G A $0000: _copy_memory_source (section data_compiler) (file uncontended.c:1793)
+    G A $0000: _IM2_PUSH_POP (section IM2_VECTOR_PLACEMENT) (file im2.asm:28)
+    G A $0022: _SETUP_IM2 (section IM2_VECTOR_PLACEMENT) (file im2.asm:67)
+    G A $0043: _IM2_VECTOR (section IM2_VECTOR_PLACEMENT) (file im2.asm:109)
+    G A $0000: _keypress (section code_user) (file keyboard.asm:14)
+    G A $0002: _Read_Controls (section code_user) (file keyboard.asm:23)
+    G A $005E: _random_number_16 (section code_user) (file random.asm:7)
+    G A $0060: _xorshift_prng (section code_user) (file random.asm:12)
+    G A $0080: _border_Change_IM2 (section code_user) (file uncontended.asm:21)
+    G A $008D: _border_Change_uncontended (section code_user) (file uncontended.asm:32)
+    G A $0091: _character_address (section code_user) (file uncontended.asm:42)
+    G A $0093: _attribute_color (section code_user) (file uncontended.asm:45)
+    G A $0094: _attribute_address (section code_user) (file uncontended.asm:55)
+    G A $0096: _attribute_width (section code_user) (file uncontended.asm:60)
+    G A $0097: _attribute_height (section code_user) (file uncontended.asm:62)
+    G A $0098: _pixel_address (section code_user) (file uncontended.asm:65)
+    G A $009A: _pixel_position (section code_user) (file uncontended.asm:67)
+    G A $009B: _character_X (section code_user) (file uncontended.asm:70)
+    G A $009C: _character_Y (section code_user) (file uncontended.asm:72)
+    G A $009D: _copy_memory (section code_user) (file uncontended.asm:80)
+    G A $0000: _xyzzy2 (section rodata_user) (file uncontended.asm:100)
+    G A $0000: _asm_temp (section bss_user) (file uncontended.asm:117)
+  Externs:
+    U         __divsint_callee
+    U         __moduint_callee
+    U         ___fs2uchar_callee
+    U         ___fsadd_callee
+    U         ___fsdiv_callee
+    U         ___fslt_callee
+    U         ___fsmul
+    U         ___fsmul_callee
+    U         ___fssub_callee
+    U         ___schar2fs_callee
+    U         ___sint2fs_callee
+    U         ___uint2fs_callee
+    U         _Bresenham_Line
+    U         _floor_fastcall
+    U         _zx_cls_fastcall
+    U         _zx_border_fastcall
+    U         _line_y2
+    U         _line_x2
+    U         _line_y1
+    U         _line_x1
+    U         _eraseLine
+    U         _buffer_address
+    U         l_ret

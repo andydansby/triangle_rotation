@@ -1,0 +1,31 @@
+Object  file ram0.o at $0000: Z80RMF18
+  Name: RAM0
+  CPU:  z80 
+  Section "": 0 bytes
+  Section bss_compiler: 0 bytes
+  Section IGNORE: 0 bytes
+  Section code_crt_init: 0 bytes
+  Section code_compiler: 0 bytes
+  Section BANK_00: 6717 bytes
+  Symbols:
+    G A $0000: _screen_buffer (section BANK_00) (file ram0Z.asm:31)
+    G A $1800: _buffer_address (section BANK_00) (file ram0Z.asm:36)
+    G A $1805: _copy_buffer (section BANK_00) (file screen_push.asm:2)
+    G A $1823: _restore_stack (section BANK_00) (file screen_push.asm:43)
+    G A $1829: _push_it_loop (section BANK_00) (file screen_push_pop.asm:2)
+    G A $1876: _line_x1 (section BANK_00) (file bresenham_variables.asm:5)
+    G A $1877: _line_y1 (section BANK_00) (file bresenham_variables.asm:7)
+    G A $1878: _line_x2 (section BANK_00) (file bresenham_variables.asm:9)
+    G A $1879: _line_y2 (section BANK_00) (file bresenham_variables.asm:11)
+    G A $1881: _eraseLine (section BANK_00) (file bresenham_variables.asm:33)
+    G A $1882: plot_x (section BANK_00) (file bresenham_variables.asm:37)
+    G A $1883: plot_y (section BANK_00) (file bresenham_variables.asm:40)
+    G A $1884: _gfx_xy (section BANK_00) (file bresenham_variables.asm:44)
+    G A $1886: X_PositionBits (section BANK_00) (file bresenham_variables.asm:47)
+    G A $197B: _Bresenham_Line (section BANK_00) (file bresenham.asm:7)
+    G A $19D5: bresenham_end (section BANK_00) (file bresenham.asm:118)
+    G A $19D6: _joffa_plot (section BANK_00) (file plot.asm:5)
+    G A $19DA: _joffa_plot1 (section BANK_00) (file plot.asm:8)
+    G A $1A02: _joffa_unplot (section BANK_00) (file plot.asm:64)
+    G A $1A06: _joffa_unplot1 (section BANK_00) (file plot.asm:68)
+    G A $1A2F: _clear_buffer (section BANK_00) (file buffer_clear.asm:2)

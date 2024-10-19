@@ -1,0 +1,51 @@
+
+https://stackoverflow.com/questions/45154176/calculate-angle-change-after-hitting-a-tilted-wall/45160605?fbclid=IwAR2vqDbnG5fQIikVgVlLGeJU94bLtb-hVXCHEnPeIf8DsEWPytZfBkk5JBs#45160605
+
+
+
+function angleReflect(incidenceAngle, surfaceAngle){
+  var a = surfaceAngle * 2 - incidenceAngle;
+  return a >= 360 ? a - 360 : a < 0 ? a + 360 : a;
+}
+
+
+			_____________________
+			\                   /
+			 \                 /
+			  \               /
+			   \             /
+			    \           /
+			     \         /
+			      \       /
+			       \     /
+				\   /
+			         \ /
+					  -
+					  
+					  
+			___________
+			\         |
+			 \        |
+			  \       |
+			   \      |
+			    \     |
+			     \    |
+			      \   |
+			       \  |
+				\ |
+				 \|
+
+
+
+			          ___________
+			         |          /
+			         |         /
+			         |        /
+			         |       /
+			         |      /
+				 |     /
+				 |    /
+				 |   /
+				 |  /
+				 | /
+				 |/
