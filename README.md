@@ -26,8 +26,8 @@ Folder 5 is using additional assembly routines.
 Folder 6 has changed to the ZSDCC compiler
     1) optimized Bresenham line routine, saves some T states when drawing line
     2) not Using buffer yet, but set up for buffer to happen
-Overall the code seems to run slower, which is unexpected.
-going to work over time to improve code speed
+    3) Set up to use IM2
+    4) create an entirely new compile flow to allow full use and seperated compile.  3 seperate compiles with Contended, Uncontended and RAM 0.  Contended is from $5DC0 to $7FFF  Uncontended is from $8000 to $BFFF and RAM0 is from $C000 to $FFFF.  This setup allows for portability to the 128K machines.
 
 
 
