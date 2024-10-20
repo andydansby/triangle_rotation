@@ -6,8 +6,8 @@ Object  file uncontended.o at $0000: Z80RMF18
   Section IGNORE: 0 bytes
   Section code_crt_init: 0 bytes
   Section code_compiler: 31 bytes
-  Section BANK_00: 1785 bytes
-  Section data_compiler: 24 bytes
+  Section BANK_00: 1786 bytes
+  Section data_compiler: 23 bytes
   Section IM2_VECTOR_PLACEMENT: 325 bytes
   Section code_user: 171 bytes
   Section rodata_user: 1 bytes
@@ -21,8 +21,8 @@ Object  file uncontended.o at $0000: Z80RMF18
     G A $0029: _xr2 (section bss_compiler) (file uncontended.c:815)
     G A $0028: _yr1 (section bss_compiler) (file uncontended.c:813)
     G A $0027: _xr1 (section bss_compiler) (file uncontended.c:811)
-    G A $0025: _d (section bss_compiler) (file uncontended.c:809)
-    G A $0023: _c (section bss_compiler) (file uncontended.c:807)
+    G A $0025: _centerY (section bss_compiler) (file uncontended.c:809)
+    G A $0023: _centerX (section bss_compiler) (file uncontended.c:807)
     G A $0021: _y3 (section bss_compiler) (file uncontended.c:805)
     G A $001F: _x3 (section bss_compiler) (file uncontended.c:803)
     G A $001D: _x2 (section bss_compiler) (file uncontended.c:801)
@@ -54,8 +54,8 @@ Object  file uncontended.o at $0000: Z80RMF18
     G A $0130: _draw_ship (section BANK_00) (file uncontended.c:1070)
     G A $0105: __cosine (section BANK_00) (file uncontended.c:1045)
     G A $0000: __sine (section BANK_00) (file uncontended.c:898)
-    G A $0016: _angle (section data_compiler) (file uncontended.c:1809)
-    G A $0014: _step (section data_compiler) (file uncontended.c:1807)
+    G A $0015: _angle (section data_compiler) (file uncontended.c:1809)
+    G A $0013: _step (section data_compiler) (file uncontended.c:1807)
     G A $0012: _size (section data_compiler) (file uncontended.c:1805)
     G A $000E: _cos_temp (section data_compiler) (file uncontended.c:1803)
     G A $000A: _sin_temp (section data_compiler) (file uncontended.c:1801)

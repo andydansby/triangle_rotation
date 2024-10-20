@@ -45,12 +45,6 @@ void main (void)
     zx_border(INK_BLUE);
     zx_cls(INK_WHITE | PAPER_BLACK);
 
-    __asm;
-        ei
-    __endasm;
-
-    //while(1) {}
-
     //buffer is
     //256 pixels wide
     //192 pixels tall
@@ -81,8 +75,8 @@ void main (void)
         y2 = 85;
         y3 = 78;
     }
-    c = (x1 + x2 + x3) / 3;
-    d = (y1 + y2 + y3) / 3;
+    centerX = (x1 + x2 + x3) / 3;
+    centerY = (y1 + y2 + y3) / 3;
 
     intrinsic_label(copy_buffer_end);
 
@@ -92,7 +86,7 @@ void main (void)
         calculateShip();
         draw_ship();
 
-        ship_angle ++;
+        ship_angle += 10;
         if (angle > MAXANGLE)
         {
             angle -= MAXANGLE;
