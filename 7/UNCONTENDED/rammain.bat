@@ -9,6 +9,10 @@ rem zcc +zx -vn -m -startup=30 -clib=new ramALL.o -o compiled -pragma-include:zp
 @rem zcc +zx -vn -SO3 -m --math16 -startup=1 -clib=sdcc_iy ramALL.o -o compiled -pragma-include:zpragma.inc
 @rem zcc +zx -vn -SO3 -m --math48 -startup=1 -clib=sdcc_iy ramALL.o -o compiled -pragma-include:zpragma.inc
 
+
+rem zcc +zx -vn -m -startup=1 -SO3 --math32 -clib=sdcc_iy -ramALL.o -o compiled -pragma-include:zpragma.inc
+
+@rem working compile string
 zcc +zx -vn -m -startup=1 -lm -clib=sdcc_iy --max-allocs-per-node200000 ramALL.o -o compiled -pragma-include:zpragma.inc
 rem check above for errors
 rem --------------------------------------------------------------

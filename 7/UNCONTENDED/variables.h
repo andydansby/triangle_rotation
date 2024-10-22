@@ -33,7 +33,7 @@ double_t cos_temp = 0;        //half_t cos_temp = 0;
 
 
 /* triangle-size: 0 = small, 1 = large */
-unsigned char size = 1;
+unsigned char size = 0;
 int step = 10;
 
 unsigned char x1;

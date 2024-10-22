@@ -62,18 +62,18 @@ void main (void)
     {
         x1 = 80;
         x2 = 125;
-        x3 = 100;
+        x3 = 102;
         y1 = 80;
-        y2 = 85;
-        y3 = 127;
+        y2 = 80;
+        y3 = 125;
     } else
     {
-        x1 = 80;
-        x2 = 80;
-        x3 = 75;
-        y1 = 80;
-        y2 = 85;
-        y3 = 78;
+        x1 = 99;
+        x2 = 107;
+        x3 = 103;
+        y1 = 95;
+        y2 = 95;
+        y3 = 105;
     }
     centerX = (x1 + x2 + x3) / 3;
     centerY = (y1 + y2 + y3) / 3;
@@ -94,7 +94,7 @@ void main (void)
         {
             angle -= MAXANGLE;
         }
-        //controls ();
+        controls (); //buggy
 
 
 

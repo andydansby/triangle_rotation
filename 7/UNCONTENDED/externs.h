@@ -43,8 +43,6 @@ extern unsigned int zx0_destination;
 extern void copy_buffer(void) __z88dk_fastcall;
 extern void set_attributes (void)  __z88dk_fastcall;
 
-extern unsigned char keypress;
-extern unsigned char Read_Controls (void) __z88dk_fastcall;
 
 //found in uncontended_section.asm
 extern void border_Change_uncontended(unsigned char color) __z88dk_fastcall;
@@ -72,9 +70,6 @@ extern unsigned int attributeSize;
 extern unsigned int attribute_address;
 
 
-//ASM KEYBOARD Variables
-//in keyboard.asm
-extern unsigned char keypress;
 
 
 //found in GRAPHICS.asm
@@ -93,10 +88,12 @@ extern unsigned char pixel_position;
 
 
 
-
+//in keyboard.asm
 //ASM KEYBOARD routines
 extern unsigned char Read_Controls (void) __z88dk_fastcall;
 extern unsigned char Read_Keyboard (void);
+//ASM KEYBOARD Variables
+extern unsigned char keypress;
 
 
 

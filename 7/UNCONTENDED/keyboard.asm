@@ -13,7 +13,7 @@ SECTION code_user
 PUBLIC _keypress
 _keypress:
 defw $0000
-
+; uses BC, DE, HL
 ; Read the in-game controls
 ; HL: The control map
 ; Returns:
@@ -21,29 +21,39 @@ defw $0000
 ; Zero flag set if no key pressed
 PUBLIC _Read_Controls
 _Read_Controls:
-    ld hl, _Input_Custom
-	LD D, 7				        ; Number of controls to check
-	LD E, 0				        ; The output flags
-	LD C,0xFE			        ; Low is always 0xFE for reading keyboard
+
+    push BC
+    push DE
+    push HL
+
+    ld HL, _Input_Custom
+	ld D, 7				        ; Number of controls to check
+	ld E, 0				        ; The output flags
+	ld C,0xFE			        ; Low is always 0xFE for reading keyboard
 
 _Read_Controls1:
-	LD B,(HL)			        ; Get the keyboard port address
-	INC HL
-	IN A,(C)			        ; Read the rows in
-	AND (HL)			        ; And with the mask
-	JR NZ, _Read_Controls2		; Skip if not pressed (bit is 0)
+	ld B,(HL)			        ; Get the keyboard port address
+	inc HL
+	in A,(C)			        ; Read the rows in
+	and (HL)			        ; And with the mask
+	jr nz, _Read_Controls2		; Skip if not pressed (bit is 0)
 
-	SCF				            ; Set C flag
+	scf				            ; Set C flag
 
 _Read_Controls2:
-	RL E				        ; Rotate the carry flag into E
-	INC HL
-	DEC D
-	JR NZ, _Read_Controls1		; Loop
-	LD A,E				        ; Fetch the key flags
+	rl E				        ; Rotate the carry flag into E
+	inc HL
+	dec D
+	jr nz, _Read_Controls1		; Loop
+	ld A,E				        ; Fetch the key flags
 	ld (_keypress), de
-	AND A				        ; Check for 0
-RET
+	and A				        ; Check for 0
+
+	pop HL
+	pop DE
+	pop BC
+
+ret
 
 
 
