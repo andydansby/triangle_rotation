@@ -12,8 +12,6 @@ call error.bat
 copy "contended.o" "..\"
 move "contended.o" "codemaps\"
 
-@REM Cleanup
-del zcc_opt.def
 
 REM a nice map view
 cd codemaps
