@@ -1,4 +1,4 @@
-# triangle_rotatiion
+# triangle_rotation
 experiments in optimizations to the rotating triangle code asked in the Sinclair computing forums
 https://spectrumcomputing.co.uk/forums/viewtopic.php?t=12159
 
