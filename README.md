@@ -30,6 +30,20 @@ Folder 6 has changed to the ZSDCC compiler
     4) create an entirely new compile flow to allow full use and seperated compile.  3 seperate compiles with Contended, Uncontended and RAM 0.  Contended is from $5DC0 to $7FFF  Uncontended is from $8000 to $BFFF and RAM0 is from $C000 to $FFFF.  This setup allows for portability to the 128K machines.
 
 
+Folder 7
+    1) Some additional tweaks to improve speed
+    2) Start to  incorporate control keys using the routine foudn in Dean Belfield's github
+
+
+Folder 8
+    1) start to transition to using Structs to hold ship variables
+
+    
+Folder 9
+    1) Finished transitioning to using struts
+    2) Ship can now move properly, up down, left right, diagonals not supported yet
+
+
 
 
 
