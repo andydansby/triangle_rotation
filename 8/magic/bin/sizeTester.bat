@@ -1,0 +1,9 @@
+echo off
+echo ------------------------------------------
+call Contendedsize.bat
+echo ------------------------------------------
+call Uncontendedsize.bat
+echo ------------------------------------------
+call Bank0size.bat
+echo ------------------------------------------
+echo on
