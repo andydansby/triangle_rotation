@@ -1,0 +1,9 @@
+Object  file ram1.o at $0000: Z80RMF12
+  Name: RAM1
+  Section bss_compiler: 0 bytes
+  Section IGNORE: 0 bytes
+  Section code_crt_init: 0 bytes
+  Section code_compiler: 0 bytes
+  Section BANK_01: 1 bytes
+  Symbols:
+    G A $0000 _ram1top (section BANK_01) (file BANK1.asm:14)
